@@ -1,0 +1,55 @@
+@import url("fonts.css");
+* {
+    outline: 1px solid mediumseagreen;
+}
+body {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+    position: relative;
+}
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url("./assets/images/background-pattern-mobile.svg");
+    }
+    
+}
+.accordion-container {
+    position: absolute;
+    top: clamp(8rem, 1.1479rem + 1.5023vw, 10rem);
+    left: clamp(1.5rem, -7.2148rem + 37.1831vw, 26.25rem);
+    right: clamp(1.5rem, -7.2148rem + 37.1831vw, 26.25rem);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+    border-radius: 1rem;
+    & header {
+        display: flex;
+        align-items: center;
+        & h1 {
+            font-family: 'WorkSansBold', sans-serif;
+            font-size: clamp(2rem, 1.4718rem + 2.2535vw, 3.5rem);
+        }
+    }
+    & details > summary {
+        font-family: 'WorkSansSemiBold', sans-serif;
+        font-size: clamp(1rem, 1.4718rem + 2.2535vw, 1.125rem);
+        & + p {
+            font-family: 'WorkSansRegular', sans-serif;
+            font-size: 1rem;
+            color: #8B6990;
+        }
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+    & details > summary::after {
+        list-style-image: url("./assets/images/icon-plus.svg");
+    }
+    & details[open] > summary::after {
+        list-style-image: url("./assets/images/icon-minus.svg");
+    }
+}

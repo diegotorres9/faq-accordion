@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'WorkSansRegular';
+    src: url("./assets/fonts/static/WorkSans-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'WorkSansBold';
+    src: url("./assets/fonts/static/WorkSans-Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'WorkSansSemiBold';
+    src: url("./assets/fonts/static/WorkSans-SemiBold.ttf") format('truetype');
+    font-weight: 600;
+    font-size: normal;
+}
