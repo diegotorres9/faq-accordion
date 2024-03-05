@@ -17,24 +17,21 @@
   </style>
 </head>
 <body>
-  <!-- <img 
-    srcset="./assets/images/background-pattern-mobile.svg 480w, ./assets/images/background-pattern-desktop.svg 800w"
-    src="./assets/images/background-pattern-desktop.svg" 
-    alt="babkground-pattern." /> -->
-    <!-- <picture style="max-width: 100%;">
-    <source srcset="./assets/images/background-pattern-desktop.svg" media="(min-width: 375px)">
-    <img src="./assets/images/background-pattern-mobile.svg" alt="background-pattern">
-    </picture> -->
+  <picture>
+    <source media="(max-width: 533px)" srcset="./assets/images/background-pattern-mobile.svg">
+    <source media="(min-width: 534px)" srcset="./assets/images/background-pattern-desktop.svg">
+    <img src="./assets/images/background-pattern-desktop.svg" alt="pattern." width="100%">
+  </picture>
   <main>
     <section class="accordion-container">
-      <header>
+      <div class="accordion-header">
       <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" fill="none"
         viewBox="0 0 40 41">
         <path fill="#AD28EB"
           d="M37.5 20.5a2.467 2.467 0 0 1-1.64 2.344l-9.913 3.604-3.603 9.911a2.5 2.5 0 0 1-4.688 0l-3.604-9.922-9.911-3.593a2.5 2.5 0 0 1 0-4.688l9.921-3.604 3.594-9.911a2.5 2.5 0 0 1 4.688 0l3.604 9.921 9.911 3.594A2.467 2.467 0 0 1 37.5 20.5Z" />
       </svg>
       <h1>FAQs</h1>
-      </header>
+      </div>
 
       <details>
         <summary>What is Frontend Mentor, and how will it help me?</summary>
